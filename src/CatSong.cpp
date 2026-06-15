@@ -9,14 +9,14 @@ char CatSong::getTypeChar() {
     return 'C';
 }
 
-int CatSong::play(std::vector<IAnimalSong> songs, int index) {
-    if (index < 0 || index > songs.size()) {
+int CatSong::play(std::vector<IAnimalSong*>& songs, int index) {
+    if (index < 0 || index >= songs.size()) {
         throw std::invalid_argument("Invalid index");
     }
 
     int dog_count = 0;
     for (int i = 0; i < index; i++) {
-        if (songs[i].getTypeChar() == 'D') {
+        if (songs[i]->getTypeChar() == 'D') {
             dog_count++;
         }
     }

@@ -14,7 +14,7 @@ public:
 
     //Functions
     char getTypeChar() override;
-    int play(std::vector<IAnimalSong> songs, int index) override;
+    int play(std::vector<IAnimalSong*>& songs, int index) override;
 };
 
 #endif //OOP_PR7_TOWNMUSICIANS_ROOSTERSONG_H

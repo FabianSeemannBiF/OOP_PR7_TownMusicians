@@ -4,17 +4,19 @@
 #include <vector>
 #include "IAnimalSong.h"
 
-class Concert
-{
-    public:
-        Concert(std::string);
-        ~Concert();
-        int play();
+class Concert {
+public:
+    Concert(std::string);
+    ~Concert();
 
-    protected:
+    int play();
+    Concert(Concert&& other) noexcept;
+    Concert& operator=(Concert&& other) noexcept;
 
-    private:
-        std::vector<IAnimalSong*> songs;
+protected:
+
+private:
+    std::vector<IAnimalSong*> songs;
 };
 
 #endif // CONCERT_H

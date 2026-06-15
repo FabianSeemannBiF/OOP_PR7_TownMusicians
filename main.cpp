@@ -13,31 +13,31 @@ int main()
     int score = concert.play();
 
     // Print final score, value in parenthesis is the expected score
-    cout << "The band reached a score of " << score << " (7) "<< endl;
+    std::cout << "The band reached a score of " << score << " (7) "<< std::endl;
 
     concert = Concert("DDD");
     score = concert.play();
-    cout << "The band reached a score of " << score << " (3) "<< endl;
+    std::cout << "The band reached a score of " << score << " (3) "<< std::endl;
 
     concert = Concert("CCC");
     score = concert.play();
-    cout << "The band reached a score of " << score << " (15) "<< endl;
+    std::cout << "The band reached a score of " << score << " (15) "<< std::endl;
 
     concert = Concert("R");
     score = concert.play();
-    cout << "The band reached a score of " << score << " (3) "<< endl;
+    std::cout << "The band reached a score of " << score << " (3) "<< std::endl;
 
     concert = Concert("DRC");
     score = concert.play();
-    cout << "The band reached a score of " << score << " (8) "<< endl;
+    std::cout << "The band reached a score of " << score << " (8) "<< std::endl;
 
     concert = Concert("RRR");
     score = concert.play();
-    cout << "The band reached a score of " << score << " (0) "<< endl;
+    std::cout << "The band reached a score of " << score << " (0) "<< std::endl;
 
     concert = Concert("CDC");
     score = concert.play();
-    cout << "The band reached a score of " << score << " (8) "<< endl;
+    std::cout << "The band reached a score of " << score << " (8) "<< std::endl;
 
     return 0;
 }

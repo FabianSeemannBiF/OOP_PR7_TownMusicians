@@ -9,14 +9,14 @@ char RoosterSong::getTypeChar() {
     return 'R';
 }
 
-int RoosterSong::play(std::vector<IAnimalSong> songs, int index) {
+int RoosterSong::play(std::vector<IAnimalSong*>& songs, int index) {
     if (index < 0 || index >= songs.size()) {
         throw std::invalid_argument("Invalid index");
     }
 
     int rooster_count = 0;
-    for (int i = 0; i < songs.size() - 1; i++) {
-        if (songs[i].getTypeChar() == 'R') {
+    for (int i = 0; i < songs.size(); i++) {
+        if (songs[i]->getTypeChar() == 'R') {
             rooster_count++;
         }
     }
