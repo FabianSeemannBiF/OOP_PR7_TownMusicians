@@ -9,7 +9,7 @@
 class DogSong : public IAnimalSong {
 public:
     //Constructor and Deconstructor
-    DogSong();
+    //DogSong();
     ~DogSong() override = default;
 
     //Functions

@@ -12,4 +12,7 @@ add_executable(OOP_PR7_TownMusicians
         includes/IAnimalSong.h
         includes/CatSong.h
         includes/DogSong.h
-        includes/RoosterSong.h)
+        includes/RoosterSong.h
+        src/CatSong.cpp
+        src/DogSong.cpp
+        src/RoosterSong.cpp)

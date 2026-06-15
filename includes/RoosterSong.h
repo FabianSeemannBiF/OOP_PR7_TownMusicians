@@ -9,7 +9,7 @@
 class RoosterSong : public IAnimalSong {
 public:
     //Constructor and Deconstructor
-    RoosterSong();
+    //RoosterSong();
     ~RoosterSong() override = default;
 
     //Functions
